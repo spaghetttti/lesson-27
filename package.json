@@ -1,4 +1,5 @@
 {
+    "homepage": "http://spaghetttti.github.io/crwn-clothing2",
     "name": "crwn-clothing",
     "version": "0.1.0",
     "proxy": "http://localhost:5000",
@@ -20,12 +21,15 @@
         "styled-components": "^5.3.1"
     },
     "devDependencies": {
+        "gh-pages": "^3.2.3",
         "react-scripts": "3.0.0"
     },
     "resolutions": {
         "babel-jest": "24.7.1"
     },
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
